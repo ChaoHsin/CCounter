@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+.myDiv {
+  border: 5px outset black;
+  background-color: lightblue;
+  text-align: center;
+}
+.button{
+  position:relative;
+  left:-50%;
+  margin: 4px 2px;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: lightblue;
+  color: black;
+  border-style: outset;
+}
+</style>
+</head>
+<body>
+  <div id="buttonDiv">
+  </div>
+<div class="myDiv">
+  <h2>額外功能：英數估算</h2>
+  <p>被漢字或空白間隔開的英數符號將被記為一字</p>
+  <p>例："Jenny撿到100 yeah!" => 字數為 2(撿到)＋3(Jenny, 100, yeah) = 5</p>
+</div>
+<br>
+<div style = "position:absolute; left:50%;" >
+<button class="button" id="ccoption">關</button>
+</div>
+<script src="options.js"></script>
+</body>
+</html>
